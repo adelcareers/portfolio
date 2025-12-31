@@ -1,0 +1,23 @@
+# Copilot Instructions
+
+- **Project Type**: Static single-page portfolio; edit plain HTML/CSS. No build step, no package manager, no tests.
+- **Entry Point**: index.html uses Bootstrap 5.3 CDN plus custom styles in assets/css/style.css.
+- **Layout**: Bootstrap containers/rows/cols for all sections; keep IDs aligned with navbar anchors (#about, #portfolio, #contact) and hero (#hero) header.
+- **Palette**: Defined in style.css header comments — #a4c2d1 (egg blue bg), #dbdcde (light grey sections), #1f7798 (mid-blue accents/buttons), #184f63 (dark-blue headings). Use these before introducing new colors.
+- **Typography**: Google Fonts import in style.css (DM Serif Display for h1/h2, Poppins elsewhere). Avoid adding new font imports unless necessary.
+- **Hero**: Uses background image assets/images/background.webp with cover sizing and centered position. Preserve sizing/position rules when editing hero.
+- **Portfolio Cards**: Card markup inside #portfolio with card-title colored #1f7798 and btn btn-outline-secondary links. Mirror this pattern for new projects.
+- **Images**: WebP assets in assets/images; keep alt text descriptive and in plain English. Prefer WebP for additions.
+- **Buttons**: Use Bootstrap button classes; hover color for portfolio buttons is mid-blue per style.css (#1f7798).
+- **Spacing**: Relies on Bootstrap utility classes (my-4, mb-5, etc.). Prefer utilities over new custom spacing rules.
+- **Forms**: Two forms (newsletter modal, contact section) are static with no JS handling. Do not add actions/scripts unless asked; keep labels tied to inputs by id/for.
+- **Accessibility**: Maintain semantic headings and meaningful alt attributes; keep navbar links targeting existing section IDs.
+- **Custom CSS Location**: Place new global styles in assets/css/style.css; keep palette comment block intact.
+- **External Dependencies**: Bootstrap CSS/JS via CDN links in index.html; Google Fonts import in style.css. Avoid mixing additional frameworks without need.
+- **Testing/Preview**: Open index.html directly in browser. No automated tests or build commands required.
+- **File Organization**: Keep images in assets/images, styles in assets/css. Avoid renaming index.html unless instructed.
+- **Content Tone**: Personal portfolio for "Mei Wong"; keep copy professional, friendly, and concise.
+- **Navigation**: Navbar brand links to index.html; nav links are in-page anchors. Ensure new sections get matching IDs.
+- **Modal**: Newsletter modal (#exampleModal) uses Bootstrap markup; retain data-bs-* attributes when modifying.
+- **Performance**: Keep assets lightweight; avoid large unoptimized images or heavy scripts.
+- **When Unsure**: Follow existing Bootstrap patterns; prefer consistency over new custom components.
